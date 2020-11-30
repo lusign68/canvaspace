@@ -1,4 +1,4 @@
-<html><head>
+html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   
     <title>CanvaSpace Game Beginnings</title> 
@@ -28,11 +28,9 @@
     <script type="application/x-javascript">
 	/**
 	Sam Squire's Space Game
-
 	Resources used:
 		Started with:
 			http://www.flashninjaclan.com/tutorialpage.php?ID=42
-
 		http://asgamer.com/?
 			http://asgamer.com/?s=bullets&x=0&y=0
 		http://www.edenwaith.com/products/pige/tutorials/collision.php
@@ -41,23 +39,16 @@
 		http://billmill.org/static/canvastutorial/ball.html		
 		https://developer.mozilla.org/en/Canvas_tutorial
 		http://www.javascriptkit.com/
-
 		http://stackoverflow.com/questions/365284/howto-avoid-image-cutoff-with-canvas-rotate
 		http://stackoverflow.com/questions/2761100/html5-canvas-how-to-make-a-loading-spinner-by-rotating-the-image-in-degrees
-
 		http://www.blobsallad.se/	
-
 		http://www.mathwarehouse.com/geometry/circle/tangents-two-circles-distance.html
-
-
 		http://html5.litten.com/understanding-save-and-restore-for-the-canvas-context/
 		http://www.cambiaresearch.com/c4/702b8cd1-e5b0-42e6-83ac-25f0306e3e25/Javascript-Char-Codes-Key-Codes.aspx
-
 		MOST COMMON MISTAKES
 			forgetting to change an X to a Y when duplicating code	
 			passing a constructor of an event rather than an instance of the event to the add_delayed
 		
-
 	  */
 
 
@@ -567,7 +558,7 @@
 
 	function setup() { // <!--{{{-->
 
-		engine = new Worker('worker.js');	
+		// engine = new Worker('worker.js');	
 		// engine.onmessage = engine_draw;
 
 		canvas = document.getElementById('canvas');
@@ -638,7 +629,7 @@
 		planets.push(earth);
 
 
-		engine.postMessage("start");
+		// engine.postMessage("start");
 
 		ticker = setInterval(tick, 70);
 		document.onkeydown = handlekeydown;
